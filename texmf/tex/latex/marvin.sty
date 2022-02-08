@@ -44,13 +44,17 @@
 }
 
 \mdfdefinestyle{mdyellowbox}{
-	linewidth=3pt,
-	rightline=false,
-	leftline=true,
+	linewidth=0pt,
+	frametitleaboveskip=0pt,
+	frametitlebelowskip=0pt,
+	skipbelow=0pt,
+	frametitlefont=\bfseries,
+	innertopmargin=6pt,
+	innerbottommargin=8pt,
+	nobreak=true,
+	backgroundcolor=yellow!10,	
 	topline=false,
 	bottomline=false,
-	linecolor=yellow,
-	backgroundcolor=yellow!5!gray!5,
 }
 
 \mdfdefinestyle{mdredbox}{
@@ -125,16 +129,16 @@
 
 % Proposition
 \declaretheoremstyle[
-	headfont=\bfseries,
-	bodyfont=\normalfont\small,
-	spaceabove=0pt,
-	mdframed={style=mdyellowbox}
+	headfont=\bfseries\color{yellow!75!black!80}\fontfamily{phv}\selectfont,
+	mdframed={style=mdyellowbox},
+	headpunct={\\[3pt]},
+	postheadspace={0pt},
 ]{thmyellowbox}
 		
 \declaretheorem[
 	style=thmyellowbox,
-	numberwithin=section
-]{solution}
+	numberwithin=chapter
+]{proposition}
 
 % Definition
 \declaretheoremstyle[
