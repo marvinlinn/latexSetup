@@ -27,7 +27,7 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage{helvet}
 
-%%%%%%%%%%%%%     DEFINITIONS     %%%%%%%%%%%%%
+%%%%%%%%%%%%%     ENVIRONMENTS     %%%%%%%%%%%%%
 
 %%% mdframed Definitions (Used for Theorem Definitions) {mdframed}
 
@@ -165,3 +165,11 @@
 	style=thmgreenbox,
 	numberwithin=chapter
 ]{theorem}
+
+%%%% Full Paragraph Indentation
+\newenvironment{fullindent}[1]%
+{\begin{list}{}%
+         {\setlength{\leftmargin}{#1}}%
+         \item[]%
+}
+{\end{list}}
