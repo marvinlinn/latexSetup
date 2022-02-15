@@ -27,6 +27,11 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage{helvet}
 
+%%%% Other Packages
+\RequirePackage[normalem]{ulem}
+\RequirePackage{fancyhdr}
+\RequirePackage{tikz}
+
 %%%%%%%%%%%%%     ENVIRONMENTS     %%%%%%%%%%%%%
 
 %%% mdframed Definitions (Used for Theorem Definitions) {mdframed}
@@ -173,3 +178,8 @@
          \item[]%
 }
 {\end{list}}
+
+%%%% TikZ
+\def\checkmark{
+	\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;
+} 
